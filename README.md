@@ -1,16 +1,31 @@
 # s-alert or SimpleAlert
+
 s-alert or SimpleAlert is a web component for displaying alert messages to the users, it is light-weight and simple to use.
 
-
+##
 ## Dependency
 
-This web component uses [domExtend](https://github.com/KirkGarcia182/domExtend)
+This web component uses [domExtend](https://github.com/KirkGarcia182/domExtend). A light-weight javascript library for helping web components easier and faster.
 
-
+##
 ## Usage
 
+```javascript
+// create the s-alert element, add the properties using props method and append it to an alert holder of your design
+$.ce('s-alert')
+.props(propsObject)
+.appendTo(alertHolderElement);
+```
 
+##
+## Props Parameters
 
+propsObject - is an object that should contain the following
+* type - A `String` that contains the type of the alert being shown. There are only 4 possible values `success`, `warning`, `danger` and `info`.
+* message - A `String` that will be shown in the alert.
+* time - An `Integer` that represents the time (in milliseconds) the alert will be shown, the alert will fade away after the time set.
+
+##
 ## Example
 
 index.html
