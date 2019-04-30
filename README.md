@@ -1,6 +1,6 @@
 # s-alert or SimpleAlert
 
-s-alert or SimpleAlert is a web component for displaying alert messages to the users, it is light-weight and simple to use.
+s-alert or SimpleAlert is a web component for displaying alert messages to the users, it is light-weight and simple to use. Just create the 's-alert' element, add the props and append it to your very own alertHolder. The alert shown is timed and will fade away after the given time. The user can hover on the alert to pause the timer to let them read the message clearly.
 
 ##
 ## Dependency
