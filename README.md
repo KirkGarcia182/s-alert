@@ -76,7 +76,7 @@ button.on('click', e => {
         only 3 props are needed
         * type - values should be either 'success', 'info', 'warning' and 'danger'
         * message - the message shown upon alert pop-up
-        * time - the time (in milliseconds) before the alert to fades away
+        * time - the time (in milliseconds) before the alert fades away
     */
     .props({
         type: 'success',
