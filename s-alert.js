@@ -152,17 +152,18 @@ class SimpleAlert extends HTMLElement {
 
     connectedCallback() {
         let _this = this,
-        name = _this._props.name,
+        _class = _this._props.type,
+        type = `${_class.charAt(0).toUpperCase()}${_class.substring(1, _class.length)}`,
         message = _this._props.message,
-        _class = _this._props.class,
+        
         time = parseInt(_this._props.time),
         
         then = Date.now(),
         elapsedTime,
         now,
         widthDeduction;
-
-        _this.name.html(name);
+        
+        _this.name.html(type);
         _this.message.html(message);
         _this.addClass(`${_class} add`);
 
