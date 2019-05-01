@@ -3,7 +3,7 @@
    License: MIT
    GitHub: https://github.com/KirkGarcia182/s-alert,
 */
-let template = $.ct`
+let template = $.ct /*html*/`
 <style>
     *{ box-sizing: border-box; }
 
@@ -18,7 +18,6 @@ let template = $.ct`
         background-color: rgba(0,0,0,0.5);
         color: var(--color);
         flex-grow: 1;
-        max-width: 295px;
     }
 
     .header{
@@ -68,7 +67,6 @@ let template = $.ct`
         height: 7px;
         width: 100%;
         background-color: rgba(255,255,255,0.5);
-        /*transition: all 10s linear;*/
     }
 
     .loading-bar .bar{
